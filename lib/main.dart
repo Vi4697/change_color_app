@@ -34,31 +34,33 @@ class _MyPageState extends State<MyPage> {
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: InkWell(
-          onTap: () {
-            changeColor();
-            _incrementCounter();
-          },
-          child: Stack(children: [
-            Container(
-              color: _color,
-              child: Center(
-                child: Text(
-                  'Hey there',
-                  style: TextStyle(color: Colors.black, fontSize: 30),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+      onTap: () {
+        changeColor();
+        _incrementCounter();
+      },
+      child: Stack(children: [
+        Container(
+          color: _color,
+          child: Center(
+            child: Text(
+              'Hey there',
+              style: TextStyle(color: Colors.black, fontSize: 30),
+              textAlign: TextAlign.center,
             ),
-            Positioned(bottom: 350, left: 58,
-                child: Text('You have $_counter bonuses!',
-                  style: TextStyle(color: Colors.black, fontSize: 30), textAlign: TextAlign.center,),
-                )
-          ]),
-        ));
+          ),
+        ),
+        Positioned(
+          bottom: 350,
+          left: 58,
+          child: Text('You have $_counter bonuses!',
+              style: TextStyle(color: Colors.black, fontSize: 30),
+              textAlign: TextAlign.center),
+        )
+      ]),
+    ));
   }
 }
