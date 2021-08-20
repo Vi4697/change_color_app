@@ -1,5 +1,3 @@
-# vika_test_app
+# vika_test_task
 
-A new Flutter test app.
-
-Added a better counter of bonuses.
+A Flutter test app.
